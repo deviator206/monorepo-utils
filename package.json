@@ -1,0 +1,27 @@
+{
+  "name": "monorepo-utils",
+  "version": "0.0.5",
+  "description": "utilities for workspace & it releases",
+  "main": "index.js",
+  "bin":{
+    "monorepo-utils":"./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deviator206/monorepo-utils.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deviator206/monorepo-utils/issues"
+  },
+  "homepage": "https://github.com/deviator206/monorepo-utils#readme",
+  "dependencies": {
+    "args": "^5.0.1",
+    "chalk": "^4.0.0",
+    "fs-extra": "^9.0.0"
+  }
+}
