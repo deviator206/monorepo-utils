@@ -2,7 +2,7 @@ const {  readdirSync, existsSync ,writeFileSync} = require('fs')
 const chalk = require('chalk');
 
 // -- --command ls-pkg --rootDir ./abc
-const skipNodeModulesPath = "node_modules1/"
+const skipNodeModulesPath = "node_modules/"
 
 const getDirectories = source =>
     readdirSync(source, { withFileTypes: true })
