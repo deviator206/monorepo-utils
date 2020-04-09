@@ -1,8 +1,18 @@
 {
-    "notInWS": [
-        
+    "rulesList":{
+        "has-prefix":[ "zxy-"],
+        "has-suffix":["-ccc"]
+    },
+    "specialPackages":[
+        "escape-string-regexp"
     ],
-    "inWS":[
-
+    "packagesInWS":[
+        "camelcase"
+    ],
+    "excludedPackages":[
+        "abc"
+    ],
+    "appliedRules":[
+        "has-prefix"
     ]
 }
