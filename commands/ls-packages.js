@@ -11,7 +11,7 @@ const getDirectories = source =>
 
 const checkForExclusionList = (singleDirec) => {
     let returnedBool = true;
-    console.log(exclusionList);
+    
     exclusionList.forEach(singlePath => {
         
         if(singleDirec.indexOf(singlePath) !== -1) {
@@ -30,7 +30,7 @@ const getAllDirec = (packageList = [], finalList, callBack, packageResultList = 
                 let localDirs = getDirectories(singleDirec);
                 localList = localList.concat(localDirs);
             } else {
-                console.log(singleDirec + ":" + existsSync(singleDirec + "/package.json"))
+                
                 packageResultList.push(singleDirec);
             }
         }
@@ -67,7 +67,7 @@ const getAllNestedPackages = (source, options) => {
                 packageFileContent.workspaces = resp;
                 writeFileSync(process.cwd()+"/"+options.pL,JSON.stringify(packageFileContent, null, 4))
             }
-            console.log("%%% ", resp)
+            console.log("Final Packages Not In WS ", resp)
         });
     }
 }
